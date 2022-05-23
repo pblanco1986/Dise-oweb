@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>MODECHAM</title>
+     
+    <script src="script.js" ></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Metodológia MODECHAM</h1>
+      <ul>
+        <a href="#box1"><li>INICIO</li></a>
+        <a href="#box2"><li>DIDÁCTICA</li></a>
+        <a href="#box3"><li>APRENDIZAJE</li>
+        
+        
+        </a>
+        
+      </ul>
+    </nav>
+
+    <section id="box1">
+      
+
+      <div id="cont">
+        <div class="caja">
+          
+          <p class="texto2">
+            Objetivo
+ 
+          </p>
+          
+          <p class="texto2">
+            Diseñar unidades didácticas de aprendizaje y encuentros pedagógicos para el desarrollo del Modelo Etnoeducativo Champalanca por parte de los profesores, en la institución Educativa  Agricola la Unión de Bajirá.
+ 
+          </p>
+          <button id="videopopup" class="boton" onclick="abrirPopup()">
+          Video
+          </button>
+          
+          <div class="popup" id="popup"> 
+            <h1>
+              video
+            </h1>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/-sb_5oKVRGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button onclick="cerrarPopup()">Cerrar</button>
+          
+          </div>
+         
+        </div>
+        <div class="caja">
+          <h3>Caja2</h3>
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="box2">
+      <div class="caja">Caja 1</div>
+      
+        
+      <div class="caja">Caja 2</div>
+    </section>
+
+    <section id="box3">
+      <div class="caja">Caja 1</div>
+      <div class="caja">Caja 2</div>
+    </section>
+
+    <footer>
+      <h6>Todos los derechos reservados</h6>
+    </footer>
+    <script>
+
+          let popup = document.getElementById("popup");
+
+      function abrirPopup(){
+
+        popup.classList.add("open-popup");
+      }
+      
+      function cerrarPopup(){
+        
+        popup.classList.remove("open-popup");
+        
+      }
+    </script>
+  </body>
+</html>

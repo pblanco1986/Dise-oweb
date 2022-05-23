@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300&display=swap');
+
+
+body{
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  
+ 
+}
+
+nav{
+  top:0;
+  margin:0;
+   
+  width: 100%;
+  color: green;
+  background: #a5d6a7;
+  box-shadow: 4px 7px 5px 0px rgba(62,66,66,0.21);
+}
+
+nav ul{
+  
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+li{
+  background-color:#338a3e;
+  border-radius: 10%;
+  align-items: center;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  list-style: none; 
+  
+   
+}
+
+nav ul a{
+  
+  text-decoration: none;
+}
+
+nav ul a:hover{
+  background-color:#ED1C13;
+  
+}
+
+h3{
+  
+  text-align:center;
+}
+p{
+  
+  text-align:center;
+  
+}
+
+
+
+section{
+  
+  padding:3em;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#box1{  
+  background-image: url("https://cdn.glitch.global/20494385-0d5a-4eb9-b3c8-13a280dc512c/Honey%20Dew.jpg?v=1652919242033");
+  background-size: cover;
+  border: solid WHITE 2px;
+  height: 100vh;
+}
+h1{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 2px #003300;
+  font-size: 2em;
+  text-align: center;
+  
+}
+
+.texto2{
+  font-size: 1em;
+  /*font-size: 1vw;*/
+  justify-content: center;
+  padding:0 1em 0 1em;
+  text-align: justify;
+  color: white;
+}
+
+.boton{
+  background-color:#e2f6ff;
+  border-radius: 10%;
+  border: none;
+  color:black;
+  font-size: 1em;
+  padding: 16px 16px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.boton:hover{
+  background-color:#e2f6ff;
+  opacity: 0.6;
+  font-size: 1.1em;
+}
+
+.popup{
+  
+  width: 75%;
+  position: absolute;
+  margin: 0 auto;
+  top:0;
+  left:50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.4s, top 0.4s;
+   visibility: hidden;
+}
+.open-popup{
+  
+  visibility: visible;
+  top: 60%;
+  transform: translate(-50%, -50%) scale(1);
+  
+}
+.popup iframe{
+  
+  width:100%;
+  margin: 0 auto;
+}
+
+.texto1{
+  
+  font-size: 1em;
+  /*font-size: 1vw;*/
+  justify-content: center;
+  padding:0 1em 0 1em;
+  text-align: justify;
+  color: white; 
+}
+
+#box2{
+  background-image: url("https://cdn.glitch.global/20494385-0d5a-4eb9-b3c8-13a280dc512c/champa.jpg?v=1652917992132");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:20px;
+  display: flex;
+  /*background: #9A0BD9;*/
+  border: solid green 2px;
+  height: 100vh;
+}
+#cont{
+  
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.caja{
+  
+  
+  flex-wrap: wrap;
+  justify-content: stretch;
+  width: 70%;
+    
+}
+
+footer{
+ 
+  border: solid red 2px;
+}
+
+@media screen and (max-width: 320px) {
+  
+  section{
+    flex-direction: column;
+    background: WHITE;
+  }
+  #cont{
+    
+    flex-direction: column;
+    
+  }
+  
+  nav{
+    background: transparent;
+    
+  }
+  
+  nav ul{
+   flex-direction: column;
+  
+    
+  }
+  
+  .caja{
+    
+     width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 720px) {
+  
+  .texto1{
+    
+     font-size:1.2em;
+  }
+  
+  
+}
